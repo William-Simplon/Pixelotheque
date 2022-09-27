@@ -1,0 +1,358 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+	font-family: "Anton-regular";
+	src: url(../font/Anton/Anton-Regular.ttf);
+}
+main{
+    background-color: blue;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    background-image: url("../img/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ; 
+}
+.big-contain{
+    margin-top:5%;
+    margin-bottom:5%;
+    width:40%;
+    height:80vh;
+    border: 4px solid white;
+    border-radius:10px;
+    display:flex;
+}
+.left-contain{
+    background-image: url(../img/hibouxredim.png);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.right-contain{
+    width: 50%;
+    padding-left:1%;
+    background-color: white;
+    border: 3px solid white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* max-height: 300%; */
+    height: 100%;
+    overflow:auto;
+    padding-top:5%
+}
+.logo{
+    margin-left:30%;
+    width:100px;
+    height:75px;
+}
+h1{ 
+    margin-top:5%;
+    font-family:"Anton-regular";
+    font-size: 1.3rem;
+}
+h2{
+    margin-top:5%;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+.seCoo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;  
+    margin-top:5%; 
+    margin-bottom:5%;
+}   
+#username{
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size: 0.7rem;
+    height:25px;
+    width:90%;
+    margin-left:5%;
+    border: 1px solid #3d3a3d; 
+    border-radius: 5px;
+}
+#email{
+    margin-top:5%;
+    margin-bottom:5%;
+    font-size: 0.7rem;
+    height:25px;
+    width:90%;
+    margin-left:5%;
+    border: 1px solid #3d3a3d; 
+    border-radius: 5px;
+}
+#password{
+    margin-top:5%;
+}
+#passwordBis{
+    margin-top:5%;
+}
+.textGris{
+    color:grey;
+font-size: 0.5rem;
+margin-top:5%;
+}
+
+.check{
+    margin-top:5%;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+.containerCheck{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap
+}
+.submit-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-text-gris{
+    width:100%;
+}
+.submitInput {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:5px;
+	border:1px solid #3d3a3d;
+	cursor:pointer;
+	color:#242024;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:2%;
+    width:40%;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    height: 30px;
+    margin-top:5%;
+}
+.submitInput:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.submitInput:active {
+	position:relative;
+	top:1px;
+}
+
+#password{
+    height:25px;
+    width:90%;
+    margin-left:5%;
+    border: 1px solid #3d3a3d; 
+    border-radius: 5px;
+    margin-bottom:5%;
+}
+#passwordBis{
+    height:25px;
+    width:90%;
+    margin-left:5%;
+    border: 1px solid #3d3a3d; 
+    border-radius: 5px;
+}
+.nomD{
+    font-size:0.7rem;
+    margin-top:5%;
+}
+.separat{
+    width:100%;
+    margin-top:5%;
+}
+.down-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.continue-btn{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:5px;
+	border:1px solid #3d3a3d;
+	cursor:pointer;
+	color:#242024;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:2%;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    height: 20px;
+    width:50%;
+    margin-top:5%;
+    text-align:center;
+}
+.down-text-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.login-container{   
+display:flex;
+padding-top:10%;
+}
+.login-link{
+    margin-left:10px;
+    color:blue;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.dejM{
+    font-family:'Times New Roman', Times, serif;
+    font-size:1rem;    
+}
+.textBlack{
+    margin-top:5%;
+    color:grey;
+    font-size: 0.6rem;
+}
+
+
+
+@media screen and (max-width:1024px) {
+#username{
+    height:20px;
+}
+#password{
+    height:20px;
+}
+.submitInput{   
+    height:30px;
+}
+.textGris{
+    font-size: 0.5rem;
+}
+.submitInput{
+    width:70%;
+    margin-left:15%;
+    font-size:0.7rem;
+    margin-top:5%;
+}
+.continue-btn{
+    width: 70%;
+    height: 27px;
+    padding: 4%;
+}
+h1{
+    font-size:1.3rem;   
+}
+.seCoo{
+    margin-top:0%;
+    font-size: 1.2rem;
+    padding-top:0%;
+    margin-bottom:2%;
+}
+.nomD{
+    font-size:0.9rem;
+}
+.textBlack{
+    font-size:9px;
+}
+h2{
+    font-size:1rem;
+}
+.logo{
+margin-left:22%;
+}
+}
+@media screen and (max-width:768px) {
+    .textGris{
+        font-size:8px;
+    }
+    .textBlack{
+        font-size:8px;
+    }
+    .seCoo{
+        font-size:1rem;
+    }
+    .submitInput{
+        width: 50%;
+        margin-left: 15%;
+        height: 10%;
+        font-size: 0.5rem;
+    }
+    .nomD{
+        font-size:0.8rem;
+    }
+    #username{
+        height:20px;
+    }
+    #password{
+        height:20px;
+    }
+    .continue-btn{
+        width: 75%;
+        height: 25px;
+        font-size: 0.5rem;
+        padding: 5%;
+    }
+    .dejM{
+        font-size:0.9rem;
+    }
+    h1{
+        font-size:1.1rem;   
+    }
+    h2{
+        font-size:0.8rem;
+    }
+    .logo{
+    margin-left:12%;
+    }
+    .login-link{
+        font-size:15px;
+    }
+    .dejM{
+        font-size:15px;
+    }
+    .login-container{
+        padding-top: 2%;
+    }
+}   
+@media screen and (max-width:430px) {
+
+.textGris{
+    font-size:8px;
+}
+.big-contain{
+    margin-top:5%;
+    margin-bottom:5%;
+    width:80%;
+    height:80vh;
+    
+}
+}
+@media screen and (max-width:320px){
+.login-link{
+
+font-size:0.7rem;
+}
+.dejM{
+    font-size:0.7rem;   
+}
+h2{
+    padding-right: 10%;
+}
+.logo{
+    margin-left:6%;
+}
+
+}
